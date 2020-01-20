@@ -1,8 +1,8 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
+title: PNU HONG YOON YOUNG
+description: HONG YOON YOUNG's OPEN CV
+author: Hong Yoon Young
+github: https://github.com/yoonyoung97
+about: 부산대학교 재학중. AI 및 서비스 개발 
 disqus_shortname: stackproblems
 google_analytics: UA-XXXXXXXX-Y
 
@@ -38,7 +38,7 @@ urls:
     - text: XML Feed
       url: /feed.xml
 
-url: "https://agusmakmun.github.io"
+url: "https://yoonyoung97.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
