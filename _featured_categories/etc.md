@@ -6,5 +6,5 @@ menu: true
 submenu: true
 order: 6
 description: >
-  기타 정보
+  기타
 ---
