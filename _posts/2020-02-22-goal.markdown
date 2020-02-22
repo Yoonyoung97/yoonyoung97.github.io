@@ -2,7 +2,7 @@
 layout: post
 title:  "2020년도 목표"
 subtitle:   "연간 계획"
-categories: Diary
+categories: diary
 comments: true
 ---
 
