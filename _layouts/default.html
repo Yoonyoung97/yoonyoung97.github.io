@@ -15,7 +15,13 @@ Looks like you are using the `{{ page.layout }}` layout. This layout is not supp
   <hr/>
 
   {{ content }}
-
+  <article>
+     <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/math...">
+    </script>
+  </article>
   <h2>Posts</h2>
   <ul class="related-posts">
 
