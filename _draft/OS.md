@@ -115,3 +115,79 @@ Buffer
 
 Stack
 
+
+
+
+
+=====================================
+
+Processes 스케쥴링
+
+프로세스란 실행하고있는 프로그램 
+
+프로세스 통신은 공유 메모리 ,프로세스 간 직접적 메세지 통신
+
+1.1 Process Concept
+
+​	단 하나의 프로세서만 처리할 수 있는 것 : Batch System == Job
+
+​	Time-shared systems : programs or tasks
+
+​	프로세서라고 하면 실행되는 프로그램이다.
+
+​	프로세스는 여러 파트로 구성이 됩니다.
+
+​	실행 되어야 하는 프로그램 명령어 코드가 존재 함 : Text Section
+
+​	명령어가 실행하기 위해선 위치를 가르키는 프로그램 카운터가 존재해야 한다. 하드웨어 / 소프트웨어 각각 존재
+
+​	또한 스택엔 파라미터/리턴주소/로컬변수가 들어갑니다.
+
+​	글로벌 변수를 지정하면 Data Section에 들어간다.
+
+​	동적 할당메모리는 Heap 에 들어간다.
+
+​	실행가능한 프로그램이 메모리의 로딩된 것 == 프로세서
+
+​	프로세서 : 코드 + 데이터 영역 + 스택 영역 + 프로세서 제어에 필요한 Process context
+
+​	프로그램 = 실행가능한 코드
+
+​	프로세서 = 액티브한 메모리에 로딩된 프로그램
+
+​	프로그램을 실행하는 것은 GUI / CLI 로 실행
+
+​	프로그램은 여러개의 프로세서로 실행 가능함.
+
+​	Stack : 파라미터, 반환 주소, 로컬 변수 , temporally data
+
+​	Heap : 동적 할당 구역
+
+​	Data Section : 전역변수
+
+​	text Section : 명령어 셋이 존재함.
+
+​	프로세서는 new state (생성됨) $$\rightarrow$$ ready(프로세서가 실행되기 위해 준비 큐에 존재하는 단계 ) $$\rightarrow$$ running(스케쥴러에 의해서 cpu에 실행되게 끔 바꿔줌 : 실행되고 있는 단계) $$\rightarrow$$ 인터럽터에 의해서 ready로 갈수 있음 or 인터럽터 때문에 입출력 대기 중이면 ready로 돌아감 $$\rightarrow$$ 실행 종료시 terminated
+
+​	
+
+Process Control Block(PCB : Task control block) 
+
+프로세서가 현재 어떤 상태에 있는지 알 수 있는 정보를 가지고 있음
+
+Program counter : 다음번 실행될 위치를 지정해줌
+
+CPU registers : 프로세서와 관련된 레지스터 정보를 가지고 있음
+
+기타 등등
+
+
+
+Threads 
+
+​	프로그램 카운터가 여러개 존재한다.
+
+​	
+
+1.2 Process Scheduling 
+
